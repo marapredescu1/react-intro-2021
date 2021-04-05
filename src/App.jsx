@@ -2,23 +2,26 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Link,
 } from 'react-router-dom';
 import { Container } from './components/Layout';
 import { ThemeToggleButton } from './components/ThemeToggleButton';
+import { Navbar } from './components/Navbar';
 import { ThemeProvider } from './contexts/theme';
+import { MoviePage } from './pages/Movie';
 
 import { HomePage } from './pages/Home';
-import { MoviePage } from './pages/Movie';
 
 function App() {
   return (
     <ThemeProvider>
       <Router>
         <div className="App">
+          <Navbar>
+            <Link to="/">Home</Link>
+            <ThemeToggleButton />
+          </Navbar>
           <Container direction="vertical">
-            <div>
-              <ThemeToggleButton />
-            </div>
             <Switch>
               <Route exact path="/movie/:id" component={MoviePage} />
               <Route exact path="/" component={HomePage} />

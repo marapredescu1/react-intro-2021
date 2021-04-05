@@ -1,0 +1,12 @@
+.navbar {
+  --padding: .5rem 1rem;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  padding: var(--padding);
+  transition: var(--transition);
+
+  a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+}
