@@ -1,5 +1,8 @@
+@import '../../mixins.scss';
+
 .navbar {
-  --padding: .5rem 1rem;
+  --padding: 0.5rem 1rem;
+  --transition-duration: 0.5s;
   background-color: var(--color-background);
   color: var(--color-text);
   padding: var(--padding);
@@ -8,5 +11,31 @@
   a {
     color: var(--color-text);
     text-decoration: none;
+  }
+}
+
+.isFixed {
+  background-color: var(--color-primary);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: var(--shadow-2);
+  animation-duration: var(--transition-duration);
+  animation-name: fadeIn;
+
+  * {
+    color: var(--color-primary-text) !important;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
   }
 }

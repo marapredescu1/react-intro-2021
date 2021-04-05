@@ -1,0 +1,24 @@
+// Variables
+$primary: #1976d2;
+$primary-text: #{color-contrast($primary)};
+$secondary: #d32f2f;
+$secondary-text: #{color-contrast($secondary)};
+$gray: #424242;
+
+//YIQ Implementation
+
+@function yiq($color) {
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+
+  @return (($red * 0.299)+ ($green * 0.587)+ ($blue * 0.114));
+}
+
+@function color-contrast($background, $dark: #000, $light: #fff) {
+  @if yiq($background) >= 128 {
+    @return $dark;
+  } @else {
+    @return $light;
+  }
+}

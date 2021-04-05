@@ -12,11 +12,15 @@ $ npm install --save-dev <package-name>
 
 ```
 
+## Adding new component
+
+`npx generate-react-cli component BackButton2`
+
 ## Sample Data
 
 Taken from: [https://gist.githubusercontent.com/sabinmarcu/f2e2a68ff36528965792e019ad9fd20b/raw/88f6726920ee13ea59121aabb45e6bba2d55a63e/data.json](https://gist.githubusercontent.com/sabinmarcu/f2e2a68ff36528965792e019ad9fd20b/raw/88f6726920ee13ea59121aabb45e6bba2d55a63e/data.json)
 
-## Libs used 
+## Libs used
 
 - airbnb eslint config: [https://www.npmjs.com/package/eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
 
@@ -35,18 +39,18 @@ Taken from: [https://gist.githubusercontent.com/sabinmarcu/f2e2a68ff36528965792e
 # Homework
 
 App / Navigation bar on the top of the page to contain:
+
 - left side
-    - link towards home (with react router)
-    - optional link that takes you back one link if not on the homepage
+  - link towards home (with react router)
+  - optional link that takes you back one link if not on the homepage
 - right side
-    - theme button
+  - theme button
 
 ## Bonus points
 
 Style nav/app bar depending on scroll position:
+
 - top of the page (scrolled all the way up)
-    - background to match page background
-- page is scrolled (visually pleasing, tolerance to be decided)
-    - background to shift
-    - add box shadow
-Bar should be fixed to top
+  - background to match page background
+- page is scrolled (visually pleasing, tolerance to be decided) - background to shift - add box shadow
+  Bar should be fixed to top

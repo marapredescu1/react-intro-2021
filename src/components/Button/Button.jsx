@@ -5,7 +5,7 @@ const validColors = ['primary', 'secondary', 'default'];
 const validVariants = ['raised', 'outlined', 'default'];
 
 export const Button = ({
-  children,
+  children = [],
   className,
   color = 'default',
   variant = 'default',
