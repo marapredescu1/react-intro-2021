@@ -22,7 +22,7 @@ const App = () => {
         <div className="App">
           <Navbar>
             <Switch>
-              <Route exact path="/" component={undefined} />
+              <Route exact path="/" />
               <Route path="/"><BackButton /></Route>
             </Switch>
             <Link to="/">Home</Link>
