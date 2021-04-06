@@ -14,9 +14,9 @@ export const Navbar = ({
 
   useEffect(
     () => {
-      window.onscroll = () => {
+      document.addEventListener('scroll', () => {
         setScrollOffset(window.scrollY);
-      };
+      });
     },
     [setScrollOffset],
   );
